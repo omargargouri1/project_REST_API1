@@ -1,0 +1,16 @@
+application: contactlist
+
+user scenario: *view contactlist
+               *add contact
+               *delete contact
+               *edit contact
+
+back ===> front
+
+backend:
+- create a server
+- connect the application to a database
+- create a model
+===> mongoose: mongoDB driver, ODM (object data modeling):
+allows us to manipulate the database through the application
+- create API endpoints/routes ()
